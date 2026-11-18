@@ -1,3 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hichem Sat | متجر الاشتراكات</title>
+<link href="https://googleapis.com" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Cairo',sans-serif}
+body{background:#0b0f19;color:#fff;padding-bottom:70px}
+header{position:sticky;top:0;z-index:99;background:#0b0f19;border-bottom:1px solid #232d42;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.3rem;font-weight:800;color:#f5c518}
+.wa-top{background:#16a34a;color:#fff;text-decoration:none;padding:6px 14px;border-radius:20px;font-size:.9rem}
+.hero{text-align:center;padding:30px 15px;border-bottom:1px solid #232d42}
+.hero h1{font-size:1.8rem;margin:10px 0}
+.hero p{color:#94a3b8;font-size:.9rem;margin-bottom:20px}
+.btns{display:flex;justify-content:center;gap:10px}
+.btn-g{background:#f5c518;color:#000;text-decoration:none;padding:8px 18px;border-radius:8px;font-weight:800}
+.btn-o{background:#131a2a;color:#fff;border:1px solid #232d42;text-decoration:none;padding:8px 18px;border-radius:8px}
+.box{max-width:800px;margin:auto;padding:20px 12px}
+.search{width:100%;background:#131a2a;border:1px solid #232d42;color:#fff;padding:10px;border-radius:10px;margin:15px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.card{background:#131a2a;border:1px solid #232d42;border-radius:14px;padding:12px;display:flex;flex-direction:column;justify-content:space-between}
+.c-title{text-align:center;font-weight:800;color:#f5c518;font-size:1rem;margin-bottom:8px}
+.row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #232d42;font-size:.82rem}
+.tag{background:#f5c518;color:#000;font-weight:800;padding:2px 6px;border-radius:6px}
+.ord{display:block;background:#16a34a;color:#fff;text-align:center;text-decoration:none;padding:8px;border-radius:8px;margin-top:10px;font-size:.85rem;font-weight:800}
+.pay{background:#131a2a;border:1px solid #232d42;border-radius:14px;padding:15px;margin-bottom:12px}
+.num{color:#f5c518;font-size:1.1rem;font-weight:800;direction:ltr;text-align:right}
+.float{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);display:flex;gap:12px}
+.f-btn{padding:10px 18px;border-radius:25px;color:#fff;text-decoration:none;font-weight:800;font-size:.85rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">HICHEM SAT</div>
+  <a href="https://wa.me" class="wa-top">واتساب</a>
+</header>
+
+<section class="hero">
+  <span style="border:1px solid #f5c518;color:#f5c518;padding:3px 10px;border-radius:6px;font-size:.8rem">4K • FHD • 8K</span>
+  <h1>ترفيهك يبدأ من هنا</h1>
+  <p>متجر Hichem Sat لأفضل باقات IPTV وتفعيل أشهر المشغلات بجودة عالية.</p>
+  <div class="btns">
+    <a href="#p" class="btn-g">شاهد الباقات</a>
+    <a href="#m" class="btn-o">طرق الدفع</a>
+  </div>
+</section>
+
+<div class="box" id="p">
+  <h2>المنتجات المتوفرة</h2>
+  <input type="text" id="s" class="search" onkeyup="f()" placeholder="ابحث عن باقة أو مشغل...">
+  <div class="grid">
+    
+    <div class="card item" data-n="golden ott جولدن">
+      <div>
+        <div class="c-title">GOLDEN OTT</div>
+        <div class="row"><span>24 ساعة</span><span class="tag">150 دج</span></div>
+        <div class="row"><span>شهر</span><span class="tag">900 دج</span></div>
+        <div class="row"><span>3 أشهر</span><span class="tag">1800 دج</span></div>
+        <div class="row"><span>6 أشهر</span><span class="tag">2300 دج</span></div>
+        <div class="row"><span>12 شهر</span><span class="tag">4400 دج</span></div>
+      </div>
+      <a href="https://wa.me?text=طلب%20GOLDEN%20OTT" class="ord">اطلب الآن</a>
+    </div>
+
+    <div class="card item" data-n="lynx لينكس">
+      <div>
+        <div class="c-title">LYNX IPTV</div>
+        <div class="row"><span>شهر</span><span class="tag">500 دج</span></div>
+        <div class="row"><span>3 أشهر</span><span class="tag">800 دج</span></div>
+        <div class="row"><span>6 أشهر</span><span class="tag">1300 دج</span></div>
+        <div class="row"><span>12 شهر</span><span class="tag">2200 دج</span></div>
+      </div>
+      <a href="https://wa.me?text=طلب%20LYNX%20IPTV" class="ord">اطلب الآن</a>
+    </div>
+
+    <div class="card item" data-n="ibo player pro ايبو برو">
+      <div>
+        <div class="c-title">IBO PLAYER PRO</div>
+        <div class="row"><span>سنة</span><span class="tag">1000 دج</span></div>
+        <div class="row"><span>مدى الحياة</span><span class="tag">1700 دج</span></div>
+      </div>
+      <a href="https://wa.me?text=تفعيل%20IBO%20PLAYER%20PRO" class="ord">اطلب الآن</a>
+    </div>
+
+    <div class="card item" data-n="ibo player ايبو">
+      <div>
+        <div class="c-title">IBO PLAYER</div>
+        <div class="row"><span>سنة</span><span class="tag">900 دج</span></div>
+        <div class="row"><span>مدى الحياة</span><span class="tag">1500 دج</span></div>
+      </div>
+      <a href="https://wa.me?text=تفعيل%20IBO%20PLAYER" class="ord">اطلب الآن</a>
+    </div>
+
+    <div class="card item" data-n="hot player هوت بلاير">
+      <div>
+        <div class="c-title">HOT PLAYER</div>
+        <div class="row"><span>سنة</span><span class="tag">1000 دج</span></div>
+        <div class="row"><span>مدى الحياة</span><span class="tag">1700 دج</span></div>
+      </div>
+      <a href="https://wa.me?text=تفعيل%20HOT%20PLAYER" class="ord">اطلب الآن</a>
+    </div>
+
     <div class="card item" data-n="neo 4k نيو">
       <div>
         <div class="c-title">NEO 4K</div>
@@ -7,7 +112,7 @@
         <div class="row"><span>6 أشهر</span><span class="tag">2400 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">3400 دج</span></div>
       </div>
-      <a href="https://wa.me" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20NEO%204K" class="ord">اطلب الآن</a>
     </div>
 
     <div class="card item" data-n="neo 4k vip نيو">
@@ -19,7 +124,7 @@
         <div class="row"><span>6 أشهر</span><span class="tag">2800 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">4200 دج</span></div>
       </div>
-      <a href="https://wa.me%20VIP" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20NEO%204K%20VIP" class="ord">اطلب الآن</a>
     </div>
 
     <div class="card item" data-n="prosat بروسات">
@@ -29,7 +134,7 @@
         <div class="row"><span>6 أشهر</span><span class="tag">2000 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">3200 دج</span></div>
       </div>
-      <a href="https://wa.me" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20PROSAT" class="ord">اطلب الآن</a>
     </div>
 
     <div class="card item" data-n="max ott ماكس">
@@ -39,7 +144,7 @@
         <div class="row"><span>6 أشهر</span><span class="tag">2600 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">3700 دج</span></div>
       </div>
-      <a href="https://wa.me" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20MAX%20OTT" class="ord">اطلب الآن</a>
     </div>
 
     <div class="card item" data-n="bleu 4k بلو">
@@ -51,7 +156,7 @@
         <div class="row"><span>6 أشهر</span><span class="tag">1800 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">2700 دج</span></div>
       </div>
-      <a href="https://wa.me" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20BLEU%204K" class="ord">اطلب الآن</a>
     </div>
 
     <div class="card item" data-n="kdmax كيدي ماكس">
@@ -63,7 +168,7 @@
         <div class="row"><span>6 أشهر</span><span class="tag">2800 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">4700 دج</span></div>
       </div>
-      <a href="https://wa.me" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20KDMAX" class="ord">اطلب الآن</a>
     </div>
 
     <div class="card item" data-n="mmtv ام ام تيفي">
@@ -74,5 +179,22 @@
         <div class="row"><span>6 أشهر</span><span class="tag">1300 دج</span></div>
         <div class="row"><span>12 شهر</span><span class="tag">2100 دج</span></div>
       </div>
-      <a href="https://wa.me" class="ord">اطلب الآن</a>
+      <a href="https://wa.me?text=طلب%20MMTV" class="ord">اطلب الآن</a>
     </div>
+
+  </div>
+</div>
+
+<div class="box" id="m">
+  <h2 style="margin-bottom:10px">طرق الدفع</h2>
+  <div class="pay">
+    <div>CCP (الحساب البريدي)</div>
+    <div class="num">0029017345 - المفتاح: 45</div>
+  </div>
+  <div class="pay">
+    <div>Baridi Mob (بريدي موب)</div>
+    <div class="num">00799999002901734545</div>
+  </div>
+</div>
+
+<div class="float">
